@@ -7,7 +7,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page HTML </title>
+    <title>Accueil - TP HTML</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,16 +15,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            text-align: center;
         }
         header {
             background: #007BFF;
             color: white;
-            padding: 10px 0;
-            text-align: center;
+            padding: 15px 0;
         }
         main {
             padding: 20px;
-            text-align: center;
         }
         footer {
             background: #333;
@@ -35,18 +34,36 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             width: 100%;
             bottom: 0;
         }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur ma page HTML</h1>
+        <h1>Bienvenue sur les TP HTML</h1>
     </header>
     <main>
-        <p>Ceci est une page HTML avec un peu de style CSS.</p>
+        <p>Choisissez un TP à afficher :</p>
+        <div class="button-container">
+            <a href="tp3.html" class="button">TP3 - HTML & CSS</a>
+            <a href="tp4.html" class="button">TP4 - Liens et Navigation</a>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 Antoine Bihlet</p>
     </footer>
 </body>
 </html>
-
